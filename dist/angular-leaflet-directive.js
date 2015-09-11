@@ -15,7 +15,7 @@ angular.module("leaflet-directive", ['nemLogging']).directive('leaflet',
             lfCenter       : '=',
             defaults       : '=',
             maxbounds      : '=',
-            bounds         : '=',
+            lfBounds       : '=',
             markers        : '=',
             legend         : '=',
             geojson        : '=',
@@ -3053,7 +3053,7 @@ angular.module("leaflet-directive").factory('nominatimService', ["$q", "$http", 
     };
 }]);
 
-angular.module("leaflet-directive").directive('bounds', ["leafletLogger", "$timeout", "$http", "leafletHelpers", "nominatimService", "leafletBoundsHelpers", function (leafletLogger, $timeout, $http, leafletHelpers, nominatimService, leafletBoundsHelpers) {
+angular.module("leaflet-directive").directive('lfBounds', ["leafletLogger", "$timeout", "$http", "leafletHelpers", "nominatimService", "leafletBoundsHelpers", function (leafletLogger, $timeout, $http, leafletHelpers, nominatimService, leafletBoundsHelpers) {
     var $log = leafletLogger;
     return {
         restrict: "A",

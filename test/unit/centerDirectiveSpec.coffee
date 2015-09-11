@@ -20,7 +20,7 @@ describe 'Directive: leaflet center', ->
     afterEach inject ($rootScope) ->
         $rootScope.$apply() unless $rootScope.$$phase
 
-    for key, directiveName of ['center', 'lf-center']
+    for key, directiveName of ['lf-center']
         describe directiveName, ->
             describe 'sets leaflet from scope', ->
                 it 'should have default {[0, 0], 1} parameters on the map if not correctly defined', ->

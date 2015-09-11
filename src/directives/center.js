@@ -1,4 +1,4 @@
-var centerDirectiveTypes = ['center', 'lfCenter'],
+var centerDirectiveTypes = ['lfCenter'],
     centerDirectives = {};
 
 centerDirectiveTypes.forEach(function(directiveName) {

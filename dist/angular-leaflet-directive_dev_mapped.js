@@ -1,5 +1,5 @@
 /*!
-*  angular-leaflet-directive 0.8.8 2015-09-09
+*  angular-leaflet-directive 0.8.8 2015-09-11
 *  angular-leaflet-directive - An AngularJS directive to easily interact with Leaflet maps
 *  git: https://github.com/tombatossals/angular-leaflet-directive
 */
@@ -3135,7 +3135,7 @@ angular.module("leaflet-directive").directive('bounds', function (leafletLogger,
     };
 });
 
-var centerDirectiveTypes = ['center', 'lfCenter'],
+var centerDirectiveTypes = ['lfCenter'],
     centerDirectives = {};
 
 centerDirectiveTypes.forEach(function(directiveName) {
